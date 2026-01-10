@@ -1,0 +1,51 @@
+{
+  "name": "cloud-dancer-landing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "Isaac D'C\u00e9sares (https://dcesares.dev)",
+  "homepage": "https://cloud-dancer.dcesares.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idcesares/Cloud-Dancer"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=10.20.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.0",
+    "lucide-react": "^0.438.0",
+    "next": "^14.2.5",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "@biomejs/biome": "^1.9.2",
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}

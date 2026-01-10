@@ -1,0 +1,29 @@
+# Cloud Dancer Portfolio Template
+> Calm, high-performance developer portfolio landing page with a single-page layout.
+
+This site is a one-page portfolio template. The Markdown mirror provides a clean, LLM-friendly
+version of the content. Section anchors map to the main content.
+
+## Pages
+- [Home](/)
+- [Home (Markdown)](/index.md)
+- [Sitemap](/sitemap.xml)
+- [Robots](/robots.txt)
+
+## Sections
+- [Hero](/#hero): Name, headline, and primary calls to action.
+- [About](/#about): Bio and quick facts.
+- [Projects](/#projects): Featured work.
+- [Skills](/#skills): Primary skill stacks.
+- [Experience](/#experience): Career timeline.
+- [Principles](/#principles): Working style.
+- [Contact](/#contact): Ways to reach out.
+
+## Optional
+- [Open Graph Image](/og.png): Social sharing preview.
+
+## Template Creator
+- Isaac D'Césares — https://dcesares.dev
+- GitHub: https://github.com/idcesares
+- Project site: https://cloud-dancer.dcesares.dev
+- Repository: https://github.com/idcesares/Cloud-Dancer
