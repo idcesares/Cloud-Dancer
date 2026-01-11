@@ -13,7 +13,14 @@ import { Timeline } from "@/components/sections/timeline";
 import { siteConfig } from "@/content/site";
 
 function JsonLd({ data }: { data: Record<string, unknown> }) {
-  return <script type="application/ld+json">{JSON.stringify(data)}</script>;
+  return (
+    <script
+      type="application/ld+json"
+      suppressHydrationWarning
+      // JSON-LD must be raw JSON text to avoid SSR/client escaping mismatches.
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
 }
 
 export default function HomePage() {
