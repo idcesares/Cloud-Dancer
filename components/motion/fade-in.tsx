@@ -1,9 +1,8 @@
 "use client";
 
+import { type HTMLMotionProps, motion } from "framer-motion";
 import { useReducedMotionPreference } from "@/components/motion/use-reduced-motion";
 import { cn } from "@/lib/utils";
-import { type HTMLMotionProps, motion } from "framer-motion";
-import * as React from "react";
 
 interface FadeInProps extends HTMLMotionProps<"div"> {
   delay?: number;

@@ -1,3 +1,5 @@
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { CloudBackground } from "@/components/cloud/cloud-background";
 import { Container } from "@/components/common/container";
 import { SocialLinks } from "@/components/common/social-links";
@@ -5,8 +7,6 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
-import { ArrowDownRight, ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 export function Hero() {
   return (

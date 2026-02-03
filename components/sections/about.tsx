@@ -1,9 +1,9 @@
+import { MapPin } from "lucide-react";
+import Link from "next/link";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
-import { MapPin } from "lucide-react";
-import Link from "next/link";
 
 export function About() {
   return (

@@ -1,8 +1,8 @@
+import { ArrowUpRight, Github } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, Github } from "lucide-react";
-import Link from "next/link";
 
 interface ProjectCardProps {
   title: string;

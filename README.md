@@ -56,6 +56,10 @@ pnpm lint
 pnpm format
 pnpm test
 ```
+First-time Playwright setup (required before `pnpm test`):
+```bash
+pnpm exec playwright install
+```
 
 ## Deployment
 Recommended: Vercel.

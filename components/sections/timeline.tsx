@@ -1,13 +1,13 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
+import * as React from "react";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { useReducedMotionPreference } from "@/components/motion/use-reduced-motion";
 import { Badge } from "@/components/ui/badge";
 import { experience } from "@/content/experience";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
-import * as React from "react";
 
 const PAGE_SIZE = 2;
 

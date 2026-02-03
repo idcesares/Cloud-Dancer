@@ -1,10 +1,10 @@
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 export function Contact() {
   return (

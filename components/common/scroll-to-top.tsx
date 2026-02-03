@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { ArrowUp } from "lucide-react";
 import * as React from "react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export function ScrollToTop() {
   const [visible, setVisible] = React.useState(false);

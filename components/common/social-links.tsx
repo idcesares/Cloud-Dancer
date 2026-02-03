@@ -1,7 +1,7 @@
-import { siteConfig } from "@/content/site";
-import { cn } from "@/lib/utils";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
+import { siteConfig } from "@/content/site";
+import { cn } from "@/lib/utils";
 
 interface SocialLinksProps {
   className?: string;

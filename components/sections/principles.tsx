@@ -1,8 +1,8 @@
+import { Gauge, ShieldCheck, Target, Users } from "lucide-react";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Card } from "@/components/ui/card";
 import { principles } from "@/content/principles";
-import { Gauge, ShieldCheck, Target, Users } from "lucide-react";
 
 const iconMap = {
   Target,

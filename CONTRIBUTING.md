@@ -26,5 +26,6 @@ pnpm format
 ## Tests
 Run the Playwright smoke test before submitting:
 ```bash
+pnpm exec playwright install
 pnpm test
 ```

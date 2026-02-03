@@ -1,8 +1,8 @@
+import type { Metadata, Viewport } from "next";
+import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { siteConfig } from "@/content/site";
 import { templateConfig } from "@/content/template";
-import type { Metadata, Viewport } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({

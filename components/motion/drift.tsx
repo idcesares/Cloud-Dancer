@@ -1,9 +1,9 @@
 "use client";
 
-import { useReducedMotionPreference } from "@/components/motion/use-reduced-motion";
-import { cn } from "@/lib/utils";
 import { type HTMLMotionProps, motion } from "framer-motion";
 import type * as React from "react";
+import { useReducedMotionPreference } from "@/components/motion/use-reduced-motion";
+import { cn } from "@/lib/utils";
 
 interface DriftProps extends HTMLMotionProps<"div"> {
   duration?: number;

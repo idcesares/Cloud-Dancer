@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "author": "Isaac D'C\u00e9sares (https://dcesares.dev)",
+  "author": "Isaac D'Césares (https://dcesares.dev)",
   "homepage": "https://cloud-dancer.dcesares.dev",
   "repository": {
     "type": "git",
@@ -24,28 +24,28 @@
     "test": "playwright test"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.1",
-    "@radix-ui/react-slot": "^1.1.0",
-    "class-variance-authority": "^0.7.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.0",
-    "lucide-react": "^0.438.0",
-    "next": "^14.2.5",
-    "next-themes": "^0.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.2"
+    "framer-motion": "^12.30.0",
+    "lucide-react": "^0.563.0",
+    "next": "^16.1.6",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.9.1",
-    "@biomejs/biome": "^1.9.2",
-    "@playwright/test": "^1.47.0",
-    "@types/node": "^20.11.30",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4"
+    "@axe-core/playwright": "^4.11.0",
+    "@biomejs/biome": "^2.3.13",
+    "@playwright/test": "^1.58.1",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.2.0",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   }
 }

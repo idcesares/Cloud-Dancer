@@ -1,9 +1,9 @@
+import { Cloud, Code2, Server, Sparkles, Wrench } from "lucide-react";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
-import { Cloud, Code2, Server, Sparkles, Wrench } from "lucide-react";
 
 const iconMap = {
   Frontend: Code2,

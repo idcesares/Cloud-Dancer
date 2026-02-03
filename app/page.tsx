@@ -18,6 +18,7 @@ function JsonLd({ data }: { data: Record<string, unknown> }) {
       type="application/ld+json"
       suppressHydrationWarning
       // JSON-LD must be raw JSON text to avoid SSR/client escaping mismatches.
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD requires raw JSON text.
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   );

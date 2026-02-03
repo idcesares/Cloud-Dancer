@@ -1,8 +1,8 @@
+import Image from "next/image";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Card } from "@/components/ui/card";
 import { testimonials } from "@/content/testimonials";
-import Image from "next/image";
 
 export function Testimonials() {
   if (!testimonials.length) {
