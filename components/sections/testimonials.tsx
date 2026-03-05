@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Card } from "@/components/ui/card";
-import { testimonials } from "@/content/testimonials";
+import { testimonials, testimonialsSection } from "@/content/testimonials";
 
 export function Testimonials() {
   if (!testimonials.length) {
@@ -14,9 +14,9 @@ export function Testimonials() {
       <Container>
         <div className="space-y-12">
           <SectionHeading
-            eyebrow="Testimonials"
-            title="Trusted by thoughtful teams"
-            subtitle="Short notes from collaborators and clients."
+            eyebrow={testimonialsSection.eyebrow}
+            title={testimonialsSection.title}
+            subtitle={testimonialsSection.subtitle}
           />
           <div className="grid gap-6 md:grid-cols-2 section-gap">
             {testimonials.map((item) => (

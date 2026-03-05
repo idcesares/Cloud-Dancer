@@ -2,7 +2,7 @@ import { Gauge, ShieldCheck, Target, Users } from "lucide-react";
 import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Card } from "@/components/ui/card";
-import { principles } from "@/content/principles";
+import { principles, principlesSection } from "@/content/principles";
 
 const iconMap = {
   Target,
@@ -17,9 +17,9 @@ export function Principles() {
       <Container>
         <div className="space-y-12">
           <SectionHeading
-            eyebrow="Principles"
-            title="A working style built for calm momentum"
-            subtitle="A few habits that keep delivery clean, clear, and consistent."
+            eyebrow={principlesSection.eyebrow}
+            title={principlesSection.title}
+            subtitle={principlesSection.subtitle}
           />
           <div className="grid gap-6 md:grid-cols-2 section-gap">
             {principles.map((item) => {

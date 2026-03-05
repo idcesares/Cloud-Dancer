@@ -1,3 +1,11 @@
+import type { Project, SectionCopy } from "@/content/types";
+
+export const projectsSection = {
+  eyebrow: "Featured",
+  title: "Selected work with gentle ambition",
+  subtitle: "Recent projects that balance clarity, craft, and measurable product outcomes.",
+} satisfies SectionCopy;
+
 export const projects = [
   {
     title: "Aurora Console",
@@ -26,4 +34,4 @@ export const projects = [
     featured: false,
     highlights: ["Used by 40+ teams"],
   },
-];
+] satisfies Project[];

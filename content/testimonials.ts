@@ -1,3 +1,11 @@
+import type { SectionCopy, Testimonial } from "@/content/types";
+
+export const testimonialsSection = {
+  eyebrow: "Testimonials",
+  title: "Trusted by thoughtful teams",
+  subtitle: "Short notes from collaborators and clients.",
+} satisfies SectionCopy;
+
 export const testimonials = [
   {
     name: "Rhea Patel",
@@ -13,4 +21,4 @@ export const testimonials = [
       "The site shipped fast, but the craftsmanship is lasting. It still feels ahead of its time.",
     avatar: "/avatars/placeholder.png",
   },
-];
+] satisfies Testimonial[];

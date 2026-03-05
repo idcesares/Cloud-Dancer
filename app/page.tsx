@@ -3,6 +3,7 @@ import { SiteFooter } from "@/components/common/site-footer";
 import { SiteHeader } from "@/components/common/site-header";
 import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
+import { Faq } from "@/components/sections/faq";
 import { Hero } from "@/components/sections/hero";
 import { Principles } from "@/components/sections/principles";
 import { Projects } from "@/components/sections/projects";
@@ -84,6 +85,7 @@ export default function HomePage() {
         <Timeline />
         <Testimonials />
         <Principles />
+        <Faq />
         <Contact />
       </main>
       <SiteFooter />

@@ -1,3 +1,11 @@
+import type { ExperienceItem, SectionCopy } from "@/content/types";
+
+export const experienceSection = {
+  eyebrow: "Experience",
+  title: "Roles that shaped the craft",
+  subtitle: "A focused timeline of delivery, systems thinking, and team impact.",
+} satisfies SectionCopy;
+
 export const experience = [
   {
     role: "Senior Frontend Engineer",
@@ -43,4 +51,4 @@ export const experience = [
     ],
     tech: ["JavaScript", "Sass", "Accessibility"],
   },
-];
+] satisfies ExperienceItem[];

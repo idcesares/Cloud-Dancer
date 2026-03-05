@@ -6,7 +6,7 @@ import { Container } from "@/components/common/container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { useReducedMotionPreference } from "@/components/motion/use-reduced-motion";
 import { Badge } from "@/components/ui/badge";
-import { experience } from "@/content/experience";
+import { experience, experienceSection } from "@/content/experience";
 import { cn } from "@/lib/utils";
 
 const PAGE_SIZE = 2;
@@ -45,9 +45,9 @@ export function Timeline() {
       <Container>
         <div className="space-y-12">
           <SectionHeading
-            eyebrow="Experience"
-            title="Roles that shaped the craft"
-            subtitle="Browse the timeline with a calm, focused carousel."
+            eyebrow={experienceSection.eyebrow}
+            title={experienceSection.title}
+            subtitle={experienceSection.subtitle}
           />
           <div className="space-y-6 section-gap">
             <AnimatePresence mode="wait">

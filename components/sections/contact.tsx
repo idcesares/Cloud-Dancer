@@ -7,34 +7,30 @@ import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
 
 export function Contact() {
+  const contact = siteConfig.contact;
+
   return (
     <section id="contact" className="section">
       <Container>
         <Card className="space-y-6 border-border/60 bg-card/80 card-padding">
           <SectionHeading
-            eyebrow="Contact"
-            title="Let’s build something calm and powerful."
-            subtitle="Open to new work, advisory, and speaking engagements."
+            eyebrow={contact.eyebrow}
+            title={contact.title}
+            subtitle={contact.subtitle}
           />
           <div className="flex flex-wrap gap-3">
-            <Button asChild size="lg">
-              <Link href={`mailto:${siteConfig.links.email}`}>Email me</Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <Link href={siteConfig.links.linkedin}>
-                LinkedIn <ArrowUpRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button asChild variant="ghost" size="lg">
-              <Link href={siteConfig.links.website}>
-                Schedule a call <ArrowUpRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            {contact.actions.map((action) => (
+              <Button key={action.label} asChild variant={action.variant} size="lg">
+                <Link href={action.href}>
+                  {action.label}
+                  {!action.href.startsWith("mailto:") ? (
+                    <ArrowUpRight className="ml-2 h-4 w-4" />
+                  ) : null}
+                </Link>
+              </Button>
+            ))}
           </div>
-          <p className="text-sm text-muted-foreground">
-            Want to add a contact form? Wire this section to your preferred form provider or
-            serverless action. See README for TODOs.
-          </p>
+          <p className="text-sm text-muted-foreground">{contact.helperText}</p>
         </Card>
       </Container>
     </section>

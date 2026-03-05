@@ -9,6 +9,8 @@ import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
 
 export function Hero() {
+  const hero = siteConfig.hero;
+
   return (
     <section id="hero" className="section relative overflow-hidden pt-24 sm:pt-32">
       <CloudBackground />
@@ -41,12 +43,14 @@ export function Hero() {
             </div>
             <SocialLinks className="pt-2" />
             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-              <span className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2">
-                Open to collaborations
-              </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2">
-                Building calm interfaces
-              </span>
+              {hero.statusChips.map((chip) => (
+                <span
+                  key={chip}
+                  className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2"
+                >
+                  {chip}
+                </span>
+              ))}
             </div>
           </FadeIn>
           <FadeIn className="space-y-4" delay={0.2}>
@@ -55,18 +59,16 @@ export function Hero() {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
                   Now
                 </p>
-                <p className="text-base text-foreground">
-                  Designing cloud-soft experiences for teams who want clarity and quiet power.
-                </p>
+                <p className="text-base text-foreground">{hero.nowBlurb}</p>
               </div>
               <div className="grid gap-4">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Availability</span>
-                  <span className="text-foreground">Q2 2026</span>
+                  <span className="text-foreground">{hero.availability}</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Focus</span>
-                  <span className="text-foreground">Web apps + motion</span>
+                  <span className="text-foreground">{hero.focus}</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Contact</span>
@@ -83,19 +85,13 @@ export function Hero() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
                 Signals
               </p>
-              <div className="grid gap-3 text-sm text-muted-foreground">
-                <div className="flex items-center justify-between">
-                  <span>Projects shipped</span>
-                  <span className="text-foreground">32+</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Open-source stars</span>
-                  <span className="text-foreground">1.4k</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Design systems</span>
-                  <span className="text-foreground">4</span>
-                </div>
+              <div className="grid gap-3 text-sm">
+                {hero.signals.map((signal) => (
+                  <div key={signal.label} className="flex items-center justify-between gap-4">
+                    <span className="text-muted-foreground">{signal.label}</span>
+                    <span className="text-foreground">{signal.value}</span>
+                  </div>
+                ))}
               </div>
             </Card>
           </FadeIn>

@@ -1,19 +1,19 @@
-@config "../tailwind.config.ts";
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
 :root {
   --cloud-dancer-hex: #f0eee9;
-  --background: 36 25% 95%;
-  --foreground: 222 30% 10%;
+  --background: 36 24% 95%;
+  --foreground: 222 28% 12%;
   --card: 36 30% 97%;
-  --card-foreground: 222 28% 12%;
-  --muted: 30 18% 92%;
-  --muted-foreground: 222 12% 20%;
-  --border: 220 12% 85%;
+  --card-foreground: 222 26% 14%;
+  --muted: 34 18% 91%;
+  --muted-foreground: 222 12% 31%;
+  --border: 220 12% 80%;
   --ring: 220 12% 60%;
-  --primary: 222 40% 18%;
+  --primary: 222 36% 20%;
   --primary-foreground: 36 30% 96%;
-  --accent: 204 32% 62%;
+  --accent: 202 35% 52%;
   --accent-foreground: 222 26% 12%;
   --radius: 16px;
   --section-y: 5rem;
@@ -26,10 +26,10 @@
 .dark {
   --background: 222 26% 10%;
   --foreground: 36 25% 95%;
-  --card: 222 22% 14%;
-  --card-foreground: 36 25% 95%;
-  --muted: 220 14% 20%;
-  --muted-foreground: 215 16% 70%;
+  --card: 222 22% 14.5%;
+  --card-foreground: 36 24% 94%;
+  --muted: 220 14% 19%;
+  --muted-foreground: 214 18% 76%;
   --border: 220 16% 24%;
   --ring: 210 20% 45%;
   --primary: 36 25% 92%;

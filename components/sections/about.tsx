@@ -6,24 +6,19 @@ import { Card } from "@/components/ui/card";
 import { siteConfig } from "@/content/site";
 
 export function About() {
+  const about = siteConfig.about;
+
   return (
     <section id="about" className="section">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] section-gap">
           <div className="space-y-6">
-            <SectionHeading
-              eyebrow="About"
-              title="A calm, deliberate approach to product craft"
-              subtitle="I help teams translate complex systems into focused, intuitive experiences."
-            />
-            <p className="text-base text-muted-foreground">
-              I specialize in design-forward engineering for modern web products. My work balances
-              clear information architecture with subtle motion and accessible UI patterns.
-            </p>
-            <p className="text-base text-muted-foreground">
-              From early-stage prototypes to polished launch, I partner closely with design and
-              product to deliver experiences that feel steady, premium, and fast.
-            </p>
+            <SectionHeading eyebrow={about.eyebrow} title={about.title} subtitle={about.subtitle} />
+            {about.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="text-base text-muted-foreground">
+                {paragraph}
+              </p>
+            ))}
           </div>
           <Card className="space-y-6 border-border/60 bg-card/80 card-padding">
             <div className="space-y-2">
@@ -36,18 +31,12 @@ export function About() {
               </div>
             </div>
             <div className="grid gap-4 text-sm">
-              <div className="flex items-center justify-between">
-                <span className="text-muted-foreground">Preferred stack</span>
-                <span>Next.js + Tailwind</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-muted-foreground">Availability</span>
-                <span>Limited, remote</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-muted-foreground">Response time</span>
-                <span>24-48h</span>
-              </div>
+              {about.quickFacts.map((fact) => (
+                <div key={fact.label} className="flex items-center justify-between gap-4">
+                  <span className="text-muted-foreground">{fact.label}</span>
+                  <span className="text-right text-foreground">{fact.value}</span>
+                </div>
+              ))}
             </div>
             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
               <Link href={siteConfig.links.linkedin} className="hover:text-foreground">
